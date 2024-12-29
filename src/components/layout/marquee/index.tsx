@@ -8,7 +8,7 @@ type MarqueeProps = {
     duration?: number,
 }
 
-const Marquee = ({ children, width = "1080px", duration = 50 }: MarqueeProps) => {
+const Marquee = ({ children, width = "100%", duration = 50 }: MarqueeProps) => {
 
     const array = useRef<HTMLDivElement>(null);
 

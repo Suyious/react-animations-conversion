@@ -101,9 +101,12 @@ function App() {
         <div className="relative h-[18em]">
           <div ref={blopRef} className="absolute w-full -bottom-[10em] h-[18em]">
             <Blop elements={[
-              { background: "conic-gradient(from 0deg at 50% 50%, #ff0000 0deg, hsl(354, 100%, 50%) 54deg, #00a6ff 106deg, #4797ff 162deg, #04f 252deg, #ff8000 306deg, hsl(0, 100%, 50%) 360deg)", width: "25em", height: "25em", borderRadius: "50%", filter: "blur(70px)"},
-              { background: "conic-gradient(from 0deg at 50% 50%, #ffd9ad 0deg, #139ce5 180deg, #fd864d 360deg)", width: "18em", height: "18em", borderRadius: "50%", filter: "blur(32px)"},
-              { background: "conic-gradient(from 0deg at 50% 50%, #ffd9ad 0deg, #139ce5 180deg, #fd864d 360deg)", width: "18em", height: "18em", borderRadius: "50%", filter: "blur(32px)", mixBlendMode: "overlay"},
+              { background: "conic-gradient(from 0deg at 50% 50%, #ff0000 0deg, hsl(354, 100%, 50%) 54deg, #00a6ff 106deg, #4797ff 162deg, #04f 252deg, #ff8000 306deg, hsl(0, 100%, 50%) 360deg)",
+                width: "25em", maxWidth: "70vw", height: "auto", aspectRatio: "1", borderRadius: "50%", filter: "blur(70px)"},
+              { background: "conic-gradient(from 0deg at 50% 50%, #ffd9ad 0deg, #139ce5 180deg, #fd864d 360deg)",
+                width: "18em", maxWidth: "60vw", height: "auto", aspectRatio: "1", borderRadius: "50%", filter: "blur(32px)"},
+              { background: "conic-gradient(from 0deg at 50% 50%, #ffd9ad 0deg, #139ce5 180deg, #fd864d 360deg)",
+                width: "18em", maxWidth: "60vw", height: "auto", aspectRatio: "1", borderRadius: "50%", filter: "blur(32px)", mixBlendMode: "overlay"},
             ]}/>
           </div>
         </div>
