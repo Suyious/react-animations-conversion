@@ -27,7 +27,7 @@ const Cursor = () => {
     })
 
     return (
-        <div ref={cursor} className="fixed z-[100] -top-4 -left-4 rounded-full pointer-events-none bg-accent w-4 h-4"/>
+        <div ref={cursor} className="hidden md:block fixed z-[100] -top-4 -left-4 rounded-full pointer-events-none bg-accent w-4 h-4"/>
     )
 }
 
